@@ -1,6 +1,34 @@
-.header {
-    font-size: 4rem;
-    background-color: black;
+* {
+    margin: 0;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 87px;
+    width: 100%;
+    background-color: goldenrod;
+    top: 0;
+    left: 0;
+    position: fixed;
+}
+
+.nav-header {
+    font-size: 3rem;
     font-style: normal;
-    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: black;
+}
+
+.bg-image {
+    background-image: url(./images/hero-image.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
 }
