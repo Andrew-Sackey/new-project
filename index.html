@@ -3,28 +3,36 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>restaurant</title>
+    <title>bakery</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <nav>
       <div class="nav-header">
-        <h1>Bakes <span>'N'</span> <span>Desserts</span></h1>
+        <h1>Bakes <span style="color: black;">'N'</span> <span style="color: brown;">Desserts</span></h1>
       </div>
-      <div class="flex flex-row text-white justify-center gap-6 items-center">
+      <div class="flex flex-row text-white justify-center gap-6 items-center text-base font-mono">
+        <div class="nav-icons">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-linkedin"></i>
+          <i class="fa-brands fa-twitter"></i>
+        </div>
         <a href="#">Home</a>
-        <a href="#">Services</a>
-        <a href="#">Help</a>
         <a href="#">About</a>
+        <a href="#">Menu</a>
+        <a href="#">Services</a>
         <a href="#">Pricing</a>
       </div>
     </nav>
     <section class="bg-image pt-24">
-      <div>
-        <h1>Let us take on a journey of baked bliss and sweet sensations</h1>
-        <p>Your bakery destination for sweets for every occasion</p>
-        <button>Menu</button>
+      <div class="overlay">
+        <h1>Let us take you on a journey of baked <span style="color: brown;">bliss and sweet</span> sensations</h1>
+        <p class="overlay-para">Your bakery destination for sweets for every occasion. Your <span style="color: red">Sweet Tooth</span> Paradise</p>
+        <input class="search" type="text" placeholder="search menu">
+        <i class="fa-duotone fa-solid fa-magnifying-glass"></i>
       </div>
     </section>
   </body>

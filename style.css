@@ -10,7 +10,7 @@ nav {
     align-items: center;
     height: 87px;
     width: 100%;
-    background-color: goldenrod;
+    background-color: transparent;
     top: 0;
     left: 0;
     position: fixed;
@@ -21,7 +21,7 @@ nav {
     font-style: normal;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-weight: bold;
-    color: black;
+    color: white;
 }
 
 .bg-image {
@@ -31,4 +31,50 @@ nav {
     background-size: cover;
     background-repeat: no-repeat;
     object-fit: cover;
+    color: rgba(0, 0, 0, 1);
+    background-attachment: fixed;
+    opacity: 1;
+}
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+
+.overlay-para {
+    font-size: 2rem;
+    font-style: italic;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: bolder;
+}
+
+.search {
+    padding: 15px 15px;
+    border-radius: 40px;
+    border: none;
+    background-color: white;
+    color: black;
+    width: 43%;
+    column-gap: 10px;
+
+}
+
+.nav-icons {
+    display: flex;
+    column-gap: 20px;
+    color: gray;
 }
