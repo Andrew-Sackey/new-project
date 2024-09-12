@@ -1,80 +1,204 @@
 * {
-    margin: 0;
-    padding: 0;
-    overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  /* overflow-y: hidden; */
 }
 
 nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 87px;
-    width: 100%;
-    background-color: transparent;
-    top: 0;
-    left: 0;
-    position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 87px;
+  width: 100%;
+  background-color: transparent;
+  top: 0;
+  left: 0;
+  position: fixed;
+  z-index: 100;
 }
 
 .nav-header {
-    font-size: 3rem;
-    font-style: normal;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-weight: bold;
-    color: white;
+  font-size: 3rem;
+  font-style: normal;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: bold;
+  color: yellow;
+  display: flex;
 }
 
 .bg-image {
-    background-image: url(./images/hero-image.png);
-    width: 100%;
-    height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
-    object-fit: cover;
-    color: rgba(0, 0, 0, 1);
-    background-attachment: fixed;
-    opacity: 1;
+  background-image: url(./images/hero-image.png);
+  width: 100%;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  color: rgba(0, 0, 0, 1);
+  background-attachment: fixed;
+  opacity: 1;
 }
 
 .overlay {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: rgba(0, 0, 0, 0.3);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .overlay h1 {
-    font-size: 3rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-weight: bold;
-    color: black;
-    text-align: center;
+  font-size: 3rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: black;
+  text-align: center;
 }
 
 .overlay-para {
-    font-size: 2rem;
-    font-style: italic;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: white;
-    font-weight: bolder;
+  font-size: 2rem;
+  font-style: italic;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: white;
+  font-weight: bolder;
 }
 
 .search {
-    padding: 15px 15px;
-    border-radius: 40px;
-    border: none;
-    background-color: white;
-    color: black;
-    width: 43%;
-    column-gap: 10px;
-
+  padding: 15px 15px;
+  border-radius: 40px;
+  border: none;
+  background-color: white;
+  color: black;
+  width: 43%;
+  column-gap: 10px;
+  /* background-position: 10px 10px; */
+}
+input[type="text"] {
+  width: 500px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 40px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url(./images/search.png);
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;
 }
 
 .nav-icons {
+  display: flex;
+  column-gap: 20px;
+  color: gray;
+}
+
+.logo-image {
+  width: 60px;
+  height: 50px;
+  margin-left: 30px;
+  margin-top: 15px;
+}
+
+/* .about-company {
+  background-image: url(./images/about-comp.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+.about-image {
+    width: 100%;
+    /* height: 100% */
+    padding-top: 15px;
+}
+
+.about-image img {
+    width: 500px;
+    height: 100%;
+}
+
+.about-header {
     display: flex;
-    column-gap: 20px;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 25px;
+    text-align: center;
+    align-content: center;
+    color: gold;
+    text-decoration: underline;
+}
+
+.about-h {
+    color: black;
+    font-size: 2.5rem;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-left: 70px;
+    padding-right: 20px;
+}
+
+.about-para {
     color: gray;
+    font-size: 1.5rem;
+    margin-left: 70px;
+    padding-right: 20px;
+    font-weight: bold;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+.products-item {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+
+.products-item img {
+ width: 100%;
+ height: 100%;
+ object-fit: cover;
+}
+
+.product-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+}
+
+.product-overlay:hover {
+  opacity: 1;
+}
+
+.product-header {
+  width: 60%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  font-size: 1rem;
+  justify-content: center;
+}
+
+.product-header h1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: 70px;
 }

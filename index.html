@@ -4,16 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>bakery</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
     <nav>
       <div class="nav-header">
-        <h1>Bakes <span style="color: black;">'N'</span> <span style="color: brown;">Desserts</span></h1>
+        <h1>
+          Bakes <span style="color: black">'N'</span>
+          <span style="color: brown">Desserts</span>
+        </h1>
+        <img class="logo-image" src="./images/logo.png" alt="img" />
       </div>
-      <div class="flex flex-row text-white justify-center gap-6 items-center text-base font-mono">
+      <div
+        class="flex flex-row text-white justify-center gap-6 items-center text-base font-mono"
+      >
         <div class="nav-icons">
           <i class="fa-brands fa-facebook"></i>
           <i class="fa-brands fa-square-instagram"></i>
@@ -29,11 +41,96 @@
     </nav>
     <section class="bg-image pt-24">
       <div class="overlay">
-        <h1>Let us take you on a journey of baked <span style="color: brown;">bliss and sweet</span> sensations</h1>
-        <p class="overlay-para">Your bakery destination for sweets for every occasion. Your <span style="color: red">Sweet Tooth</span> Paradise</p>
-        <input class="search" type="text" placeholder="search menu">
-        <i class="fa-duotone fa-solid fa-magnifying-glass"></i>
+        <h1>
+          Let us take you on a journey of baked
+          <span style="color: brown">bliss and sweet</span> sensations
+        </h1>
+        <p class="overlay-para">
+          Your bakery destination for sweets for every occasion. Your
+          <span style="color: red">Sweet Tooth</span> Paradise
+        </p>
+        <input class="search" type="text" placeholder="search menu" />
       </div>
     </section>
+    <!-- about company starts here -->
+    <section class="flex flex-row justify-around w-[80%] mx-auto py-20">
+      <div class="w-1/2">
+        <div class="about-image">
+          <img src="./images/about-comp.jpg" alt="about us image" />
+        </div>
+      </div>
+      <div class="w-1/2 flex flex-col items-center justify-center">
+       <h1 class="about-header"><small>ABOUT OUR COMPANY</small></h1> 
+        <h2 class="about-h">We Create Incredibly Tasty Pastries And Desserts.</h2>
+        <p class="about-para">Our mission is to provide everyone with a high and useful reward for his/her purchase or investment.
+        </p>
+      </div>
+    </section>
+    <!-- our products section starts here -->
+     <section>
+      <div class="product-header">
+        <h1>Our Products</h1>
+        <p>we have a variety of products</p>
+      </div>
+      <div>
+        <div class="products">
+          <!--  -->
+          <div class="products-item">
+            <img src="./images/pro 1.jpg" alt="Gallery image" />
+            <div class="product-overlay">
+              <button><span style="color: black; background-color: yellow;">Add to cart</span></button>
+              <h4>90.99$</h4>
+            </div>
+      </div>
+          <div class="products-item">
+            <img src="./images/pro 2.jpg" alt="Gallery image" />
+            <div class="product-overlay">
+              <button><span style="color: black; background-color: yellow;">Add to cart</span></button>
+              <h4>90.99$</h4>
+            </div>
+      </div>
+          <div class="products-item">
+            <img src="./images/pro 3.jpg" alt="Gallery image" />
+            <div class="product-overlay">
+              <button><span style="color: black; background-color: yellow;">Add to cart</span></button>
+              <h4>90.99$</h4>
+            </div>
+      </div>
+          <div class="products-item">
+            <img src="./images/pro 4.jpg" alt="Gallery image" />
+            <div class="product-overlay">
+              <button><span style="color: black; background-color: yellow;">Add to cart</span></button>
+              <h4>90.99$</h4>
+            </div>
+      </div>
+          <div class="products-item">
+            <img src="./images/pro 5.jpg" alt="Gallery image" />
+            <div class="product-overlay">
+              <button><span style="color: black; background-color: yellow;">Add to cart</span></button>
+              <h4>90.99$</h4>
+            </div>
+      </div>
+          <div class="products-item">
+            <img src="./images/pro 6.jpg" alt="Gallery image" />
+            <div class="product-overlay">
+              <button><span style="color: black; background-color: yellow;">Add to cart</span></button>
+              <h4>90.99$</h4>
+            </div>
+      </div>
+          <div class="products-item">
+            <img src="./images/pro 7.jpg" alt="Gallery image" />
+            <div class="product-overlay">
+              <button><span style="color: black; background-color: yellow;">Add to cart</span></button>
+              <h4>90.99$</h4>
+            </div>
+      </div>
+          <div class="products-item">
+            <img src="./images/pro 8.png" alt="Gallery image" />
+            <div class="product-overlay">
+              <button><span style="color: black; background-color: yellow;">Add to cart</span></button>
+              <h4>90.99$</h4>
+            </div>
+      </div>
+     </section>
   </body>
 </html>
