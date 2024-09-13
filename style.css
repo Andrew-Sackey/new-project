@@ -10,7 +10,7 @@ nav {
   align-items: center;
   height: 87px;
   width: 100%;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.6);
   top: 0;
   left: 0;
   position: fixed;
@@ -22,12 +22,12 @@ nav {
   font-style: normal;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
   font-weight: bold;
-  color: yellow;
+  color: burlywood;
   display: flex;
 }
 
 .bg-image {
-  background-image: url(./images/hero-image.png);
+  background-image: url(./images/hero-image.jpg);
   width: 100%;
   height: 100vh;
   background-size: cover;
@@ -50,9 +50,9 @@ nav {
 
 .overlay h1 {
   font-size: 3rem;
-  font-family: Georgia, "Times New Roman", Times, serif;
+  font-family: "Protest Guerilla" sans-serif;
   font-weight: bold;
-  color: black;
+  color: whitesmoke;
   text-align: center;
 }
 
@@ -64,16 +64,55 @@ nav {
   font-weight: bolder;
 }
 
-.search {
+/* .search {
   padding: 15px 15px;
   border-radius: 40px;
   border: none;
   background-color: white;
   color: black;
   width: 43%;
-  column-gap: 10px;
+  column-gap: 10px; */
   /* background-position: 10px 10px; */
+/* } */
+
+.hero-btn {
+  font-size: 20px;
+  color: black;
+  background: none;
+  border-radius: 30px;
+  padding: 10px 10px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.8s;
+  position: relative;
+  overflow: hidden;
 }
+
+.hero-btn::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0%;
+  background-color: #ccc;
+  z-index: -1;
+  transition: 0.8s;
+}
+
+.hero-btn::before {
+  top: 0;
+  border-radius: 50% 50% 0 0;
+}
+
+.hero-btn:hover::before {
+  height: 180px;
+}
+
+.hero-btn:hover {
+color: #000;
+}
+
 input[type="text"] {
   width: 500px;
   box-sizing: border-box;
@@ -109,7 +148,7 @@ input[type="text"] {
 
 .about-image {
     width: 100%;
-    /* height: 100% */
+    height: 100%;
     padding-top: 15px;
 }
 
@@ -171,6 +210,7 @@ input[type="text"] {
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
   width: 100%;
   height: 100%;
   display: flex;
@@ -180,6 +220,8 @@ input[type="text"] {
   color: white;
   background-color: rgba(0, 0, 0, 0.8);
   opacity: 0;
+  overflow: hidden;
+  transition: .5s ease-out;
 }
 
 .product-overlay:hover {
@@ -187,18 +229,42 @@ input[type="text"] {
 }
 
 .product-header {
-  width: 60%;
-  text-align: center;
   display: flex;
   flex-direction: column;
   row-gap: 10px;
   font-size: 1rem;
-  justify-content: center;
+  justify-items: center;
+  place-content: center;
+  margin-top: 20px ;
+  margin-left: 50%;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
+
 }
 
-.product-header h1 {
+.pro-para {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-  margin-left: 70px;
+  margin-left: 38%;
+  font-size: 20px;
+  color: white;
 }
+
+body {
+  background-color: grey;
+}
+
+.btn {
+  font-size: 1rem;
+  color: blanchedalmond;
+  position: absolute;
+  text-align: center;
+  padding: 15px 15px;
+  border-radius: 50px;
+  border: 30px;
+}
+
+
