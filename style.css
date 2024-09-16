@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&display=swap");
 
 * {
   margin: 0;
   padding: 0;
 
-  /* overflow-y: hidden; */
+  /* overflow-x: hidden; */
 }
 
 nav {
@@ -39,7 +39,6 @@ nav {
   color: rgba(0, 0, 0, 0.3);
   background-attachment: fixed;
   /* background: linear-gradient(to right, #2d0b00, #2d0b00); */
-
 }
 
 .overlay {
@@ -256,7 +255,6 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
-
 }
 
 .btn {
@@ -277,12 +275,11 @@ body {
 }
 
 /* .inner {
-  /* max-width: 1200px; */ 
-  /* margin: auto;
+  /* max-width: 1200px; */
+/* margin: auto;
   /* padding: 0 20px; */
-  /* overflow: hidden; 
+/* overflow: hidden; 
 } */
-
 
 /* .border {
   width: 160px;
@@ -353,37 +350,33 @@ body {
   justify-content: center;
 }
 
- /* footer {
+/* footer {
   width: 100%;
   position: absolute;
   background: linear-gradient(to right, #00093c, #2d0b00);
   color: white;
   padding: 100px 0 30px;
   /* border-top-left-radius: 125px; */
-  /* font-size: 13px;
+/* font-size: 13px;
   line-height: 20px;
   background-color: white;
-  margin-top: auto; */
- */
+  margin-top: auto; 
+  */
 
-/* .footer {
+.footer {
   display: flex;
   flex-direction: row;
   background: linear-gradient(to right, #00093c, #2d0b00);
   color: white;
-  margin-bottom: 40%;
   border-top-left-radius: 125px;
   font-size: 13px;
   line-height: 20px;
-  position: absolute;
-  padding-top: 50%;
-  padding-bottom: 30%; */
-
-
+  padding: 4rem 0;
+}
 
 .roww {
   width: 85%;
-  margin: 0;
+  margin: auto;
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -422,12 +415,11 @@ body {
 }
 
 ul {
-list-style: none;
-margin-top: 12px;
-color: white;
-display: flex;
-flex-direction: column;
-
+  list-style: none;
+  margin-top: 12px;
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
 
 ul a {
@@ -458,7 +450,7 @@ form input {
   outline: none;
 }
 
-form button{
+form button {
   background: transparent;
   border: 0;
   outline: none;
@@ -488,10 +480,14 @@ form button{
   position: absolute;
   top: 25px;
   left: 25px;
-
+}
+hr {
+  border: 1px solid yellow;
+  display: block;
+  margin-bottom: 3rem;
 }
 
-.underline span{
+.underline span {
   width: 15px;
   height: 100%;
   background: #fff;
@@ -503,16 +499,10 @@ form button{
 }
 
 @keyframes moving {
-  0%{
-    left: -20px; 
+  0% {
+    left: -20px;
   }
-  100%{
+  100% {
     left: 100%;
   }
-  }
-
-  html {
-    height: 100%;
-  }
-
-
+}
